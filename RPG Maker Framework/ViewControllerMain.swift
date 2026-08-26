@@ -1,6 +1,6 @@
 //
 //  ViewControllerMain.swift
-//  RPG Maker MZ Framework for Xcode 12
+//  RPG Maker Framework
 //
 //  Created by Giancarlos Alvarado on 2/6/21.
 //

@@ -1,5 +1,5 @@
 //
-// RPG Maker MZ Export Framework for iOS (Xcode 12)
+// RPG Maker Framework for iOS
 
 // Wiz Arts Digital, 2021
 

@@ -1,14 +1,14 @@
-# RPG-Maker-MZ-Framework-for-Xcode-12
+# RPG Maker Framework
 
 What Does This Framework Do?
-With this framework you can copy your deployed RPG Maker MZ project into this Xcode 12 Project and run - and publish - your games on iOS, iPadOS and now - macOS Big Sur. 
+With this framework you can copy your deployed RPG Maker MZ project into this Xcode 26 project and run - and publish - your games on iOS, iPadOS and macOS (Designed for iPad / Mac Catalyst). The project targets iOS 18.0 and later.
 
 Prerequisites:
 You will need a RPG Maker MZ Project, 
 RPG Maker MZ
 Mac
 iOS Device 
-Xcode 12 
+Xcode 26 
 Apple Developer Account (Signing Certificate, Provisioning Profiles, Etc.) 
 
 See Official Apple Developer Documentation if you’re unfamiliar on how to develop and publish for Apple Platforms. 
@@ -18,11 +18,11 @@ Instructions:
 Step 1: Export Your Game in RPG Maker MZ
 Under File menu, select Deployment. Make sure to use Web Browsers / iOS / Android option. 
 
-Step 2: Open this Xcode 12 Project.
+Step 2: Open this Xcode 26 Project (RPG Maker Framework.xcodeproj).
 
 Step 3: Copy Your Game Folder
-Right click the ViewControllwer.swift file (or general area) on the left panel (file hierarchy).
-Select Add Files to "RPG Maker MZ Framework for Xcode 12"... from the menu
+Right click the ViewController.swift file (or general area) on the left panel (file hierarchy).
+Select Add Files to "RPG Maker Framework"... from the menu
 Select your games www folder (usually in Documents/Output) and select “Add”
 Make sure to select the “Copy items if needed” option.
 Select Create folder references.
@@ -61,7 +61,7 @@ www > js > rmmz_managers.js
 
 WARNING: YOUR MZ GAME WILL NOT WORK IF YOU DO NOT DO THIS STEP!!!!!!!!!!!!!!
 
-And that’s it! You can now run your game in simulator mode for all platforms (including macOS so long as you’re on a Big Sur machine), or plug in an iOS/iPadOS device (so long as you have developer permissions). 
+And that’s it! You can now run your game in simulator mode for all platforms (including macOS), or plug in an iOS/iPadOS device (so long as you have developer permissions). 
 
 Storyboard & Xcode Extras
 Extra Storyboard Added in Main.Storyboard. This was added to create a “Pre-App” event so that any developer can add extra features such as In-App Purchases, Multiple RPG Maker MZ-based mini-games, Ads, etc., to this app. This is a feature that will be built out extensively in the future. 

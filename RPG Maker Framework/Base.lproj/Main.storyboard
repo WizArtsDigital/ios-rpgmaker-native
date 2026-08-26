@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="RPG_Maker_MZ_Framework_for_Xcode_12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="RPG_Maker_Framework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
         <!--View Controller Main-->
         <scene sceneID="B6Q-tk-FxG">
             <objects>
-                <viewController id="8Uh-oV-Vyr" userLabel="View Controller Main" customClass="ViewControllerMain" customModule="RPG_Maker_MZ_Framework_for_Xcode_12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8Uh-oV-Vyr" userLabel="View Controller Main" customClass="ViewControllerMain" customModule="RPG_Maker_Framework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JBX-9n-stX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
