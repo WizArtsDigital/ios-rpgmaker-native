@@ -16,6 +16,9 @@
 		B100000000000000000000A8 /* AdConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000F8 /* AdConfig.swift */; };
 		B100000000000000000000A9 /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000F9 /* AdBannerView.swift */; };
 		B100000000000000000000AA /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = B100000000000000000000D1 /* GoogleMobileAds */; };
+		B100000000000000000000AB /* GameControllerMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000FB /* GameControllerMonitor.swift */; };
+		B100000000000000000000AC /* GameControllerBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000FC /* GameControllerBridge.swift */; };
+		B100000000000000000000AD /* GamepadBridgeScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000FD /* GamepadBridgeScript.swift */; };
 		B100000000000000000000A7 /* Games in Resources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000F7 /* Games */; };
 		A36ED01B25CDD5B8000E5717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A36ED01A25CDD5B8000E5717 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -33,6 +36,9 @@
 		B100000000000000000000F7 /* Games */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Games; sourceTree = "<group>"; };
 		B100000000000000000000F8 /* AdConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdConfig.swift; sourceTree = "<group>"; };
 		B100000000000000000000F9 /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
+		B100000000000000000000FB /* GameControllerMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerMonitor.swift; sourceTree = "<group>"; };
+		B100000000000000000000FC /* GameControllerBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerBridge.swift; sourceTree = "<group>"; };
+		B100000000000000000000FD /* GamepadBridgeScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamepadBridgeScript.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 				B100000000000000000000F1 /* RPGMakerFrameworkApp.swift */,
 				B1000000000000000000000B /* Models */,
 				B1000000000000000000000C /* Views */,
+				B1000000000000000000000D /* Controllers */,
 				B100000000000000000000F7 /* Games */,
 				A36ED01A25CDD5B8000E5717 /* Assets.xcassets */,
 				A36ED01F25CDD5B8000E5717 /* Info.plist */,
@@ -95,6 +102,16 @@
 				B100000000000000000000F6 /* GameWebView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B1000000000000000000000D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B100000000000000000000FB /* GameControllerMonitor.swift */,
+				B100000000000000000000FC /* GameControllerBridge.swift */,
+				B100000000000000000000FD /* GamepadBridgeScript.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +197,9 @@
 				B100000000000000000000A6 /* GameWebView.swift in Sources */,
 				B100000000000000000000A8 /* AdConfig.swift in Sources */,
 				B100000000000000000000A9 /* AdBannerView.swift in Sources */,
+				B100000000000000000000AB /* GameControllerMonitor.swift in Sources */,
+				B100000000000000000000AC /* GameControllerBridge.swift in Sources */,
+				B100000000000000000000AD /* GamepadBridgeScript.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

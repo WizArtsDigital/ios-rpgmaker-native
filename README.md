@@ -26,6 +26,7 @@ RPG Maker Framework/
   Views/GameWebView.swift      - The single WKWebView wrapper (the only WebKit code)
   Views/AdBannerView.swift     - Google AdMob adaptive banner shown under the game grid
   Models/AdConfig.swift        - AdMob banner ad unit ID
+  Controllers/                 - Game controller support (PS5, Xbox, Backbone One, MFi)
   Games/                       - One folder per game. Ships with "Hello World" as a sample.
   Assets.xcassets, Info.plist
 
@@ -85,6 +86,24 @@ How the IDs work:
   - Info.plist `GADApplicationIdentifier` is still Google's TEST app ID - replace it with this app's own AdMob app ID at the same time.
   - Ads are requested as non-personalized ("npa": "1"), so no App Tracking Transparency prompt or NSUserTrackingUsageDescription is needed. See the comments in AdConfig.swift if you want personalized ads later.
 The SKAdNetworkItems list in Info.plist is Google's current recommended set. ParkExplore also has a StoreKit "Remove Ads" purchase (AdFreeStore) that hides the banner; that is not ported yet.
+
+Game Controllers (PS5 DualSense, Xbox, Backbone One, MFi)
+Any controller iOS recognizes works out of the box - pair a DualSense or Xbox controller in Settings > Bluetooth, or plug the phone into a Backbone One. The library screen shows a green "controller connected" badge in the top-right, and inside a game the controller drives RPG Maker directly through Apple's GameController framework (Controllers/GameControllerBridge.swift), which is far more reliable than the browser Gamepad API inside a WKWebView. No Backbone SDK is needed; Backbone One is a standard MFi extended gamepad.
+
+Default mapping (same as RPG Maker MZ's own Input.gamepadMapper, so games behave like they do with a controller in a desktop browser):
+
+  A / Cross            ok        (confirm, interact)
+  B / Circle           cancel    (back)
+  X / Square           shift     (dash)
+  Y / Triangle         menu      (open menu)
+  LB / L1              pageup
+  RB / R1              pagedown
+  D-pad or left stick  move
+  Menu / Options (≡)   escape    (menu on the map, cancel in menus)
+
+To change the mapping, edit the `bind(...)` calls in GameControllerBridge.attach. Triggers, right stick, Share/Create and the touchpad are intentionally unmapped - bind them there if a game needs them.
+
+How it works: Controllers/GamepadBridgeScript.swift is injected into every game before its scripts run and exposes window.RPGMakerFrameworkGamepad. Native button changes are sent with evaluateJavaScript and written straight into Input._currentState, which is exactly what RPG Maker's own gamepad polling does. While a controller is connected, MZ's browser polling is bypassed so input is never double-counted; with no controller it runs as normal.
 
 Customizing the Library Screen
 Everything you see before a game starts lives in Views/GameLibraryView.swift. It is plain SwiftUI, so this is the place to add features such as In-App Purchases, Ads, a settings screen, or a different look for the game grid. GamePlayerView.swift owns the full-screen game and the exit button; GameWebView.swift is the only file that talks to WebKit.

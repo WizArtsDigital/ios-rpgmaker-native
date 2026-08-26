@@ -11,6 +11,7 @@ import SwiftUI
 struct GameLibraryView: View {
     @Environment(GameLibrary.self) private var library
     @State private var selectedGame: Game?
+    private let controllers = GameControllerMonitor.shared
 
     private let columns = [GridItem(.adaptive(minimum: 150, maximum: 220), spacing: 20)]
 
@@ -25,6 +26,20 @@ struct GameLibraryView: View {
             }
             .navigationTitle("Games")
             .background(Color(.systemGroupedBackground))
+            .toolbar {
+                if let name = controllers.primaryControllerName {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Label(name, systemImage: "gamecontroller.fill")
+                            .labelStyle(.titleAndIcon)
+                            .font(.subheadline)
+                            .padding(.horizontal, 10)
+                            .padding(.vertical, 5)
+                            .background(.green.opacity(0.15), in: Capsule())
+                            .foregroundStyle(.green)
+                            .accessibilityLabel("\(name) connected")
+                    }
+                }
+            }
             .safeAreaInset(edge: .bottom, spacing: 0) {
                 AdBannerView()
                     .background(.ultraThinMaterial)
