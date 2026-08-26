@@ -24,6 +24,8 @@ RPG Maker Framework/
   Views/GameLibraryView.swift  - The game picker grid
   Views/GamePlayerView.swift   - Full-screen game host with the exit button
   Views/GameWebView.swift      - The single WKWebView wrapper (the only WebKit code)
+  Views/AdBannerView.swift     - Google AdMob adaptive banner shown under the game grid
+  Models/AdConfig.swift        - AdMob banner ad unit ID
   Games/                       - One folder per game. Ships with "Hello World" as a sample.
   Assets.xcassets, Info.plist
 
@@ -73,6 +75,16 @@ js > rmmz_managers.js
 WARNING: YOUR MZ GAME WILL NOT WORK IF YOU DO NOT DO THIS STEP!!!!!!!!!!!!!!
 
 And that’s it! You can now run your games in the simulator, or plug in an iOS/iPadOS device (so long as you have developer permissions). 
+
+Google AdMob
+The library screen shows an anchored adaptive banner at the bottom, using the same implementation as ParkExplore (Views/AdBannerView.swift + Models/AdConfig.swift). The Google Mobile Ads SDK is pulled in with Swift Package Manager (https://github.com/googleads/swift-package-manager-google-mobile-ads, 13.4+) - Xcode resolves it automatically the first time you open the project; no CocoaPods and no -ObjC linker flag needed.
+
+How the IDs work:
+  - DEBUG builds always use Google's test banner unit, so you never request or click live ads while developing (AdMob invalid-traffic policy).
+  - RELEASE builds use `liveBannerAdUnitID` in Models/AdConfig.swift. It is empty right now, so Release falls back to the test unit and logs a reminder. Fill it in from the AdMob console before shipping.
+  - Info.plist `GADApplicationIdentifier` is still Google's TEST app ID - replace it with this app's own AdMob app ID at the same time.
+  - Ads are requested as non-personalized ("npa": "1"), so no App Tracking Transparency prompt or NSUserTrackingUsageDescription is needed. See the comments in AdConfig.swift if you want personalized ads later.
+The SKAdNetworkItems list in Info.plist is Google's current recommended set. ParkExplore also has a StoreKit "Remove Ads" purchase (AdFreeStore) that hides the banner; that is not ported yet.
 
 Customizing the Library Screen
 Everything you see before a game starts lives in Views/GameLibraryView.swift. It is plain SwiftUI, so this is the place to add features such as In-App Purchases, Ads, a settings screen, or a different look for the game grid. GamePlayerView.swift owns the full-screen game and the exit button; GameWebView.swift is the only file that talks to WebKit.

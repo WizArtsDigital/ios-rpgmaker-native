@@ -25,6 +25,10 @@ struct GameLibraryView: View {
             }
             .navigationTitle("Games")
             .background(Color(.systemGroupedBackground))
+            .safeAreaInset(edge: .bottom, spacing: 0) {
+                AdBannerView()
+                    .background(.ultraThinMaterial)
+            }
         }
         .fullScreenCover(item: $selectedGame) { game in
             GamePlayerView(game: game) {
