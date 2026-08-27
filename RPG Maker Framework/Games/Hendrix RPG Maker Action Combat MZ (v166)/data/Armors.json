@@ -1,0 +1,13 @@
+[
+null,
+{"id":1,"atypeId":1,"description":"Improve Physical Defense slightly","etypeId":4,"traits":[],"iconIndex":135,"name":"Linen Clothing","note":"","params":[0,0,0,5,0,1,0,0],"price":100},
+{"id":2,"atypeId":1,"description":"Improve Magical Defense slightly","etypeId":4,"traits":[],"iconIndex":138,"name":"Red Cape","note":"","params":[0,0,0,1,0,6,0,0],"price":200},
+{"id":3,"atypeId":1,"description":"Improve all Defense slightly","etypeId":4,"traits":[],"iconIndex":139,"name":"Green Cape","note":"","params":[0,0,0,7,0,7,0,0],"price":500},
+{"id":4,"atypeId":1,"description":"Significantly improve Physical Defense","etypeId":4,"traits":[],"iconIndex":137,"name":"Steel Plate","note":"","params":[0,0,0,10,0,2,0,0],"price":800},
+{"id":5,"atypeId":1,"description":"Significantly improve Magical Defense","etypeId":4,"traits":[],"iconIndex":139,"name":"Rock Hard Cape","note":"","params":[0,0,0,2,0,10,0,0],"price":1200},
+{"id":6,"atypeId":1,"description":"Significantly improve all Defense","etypeId":4,"traits":[],"iconIndex":136,"name":"Extra Large Armor","note":"","params":[0,0,0,15,0,20,0,0],"price":3500},
+{"id":7,"atypeId":0,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
+{"id":8,"atypeId":0,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
+{"id":9,"atypeId":0,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
+{"id":10,"atypeId":0,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0}
+]

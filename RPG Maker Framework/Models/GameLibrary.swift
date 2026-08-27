@@ -54,8 +54,24 @@ final class GameLibrary {
             title: readTitle(in: folder) ?? folder.lastPathComponent,
             folderURL: folder,
             indexURL: index,
-            iconURL: fileManager.fileExists(atPath: icon.path) ? icon : nil
+            iconURL: fileManager.fileExists(atPath: icon.path) ? icon : nil,
+            frameworkConfigJSON: readFrameworkConfig(in: folder)
         )
+    }
+
+    /// Optional `framework.json` next to index.html. Validated as JSON so a typo
+    /// can't inject broken script into the game; invalid files are ignored.
+    private static func readFrameworkConfig(in folder: URL) -> String? {
+        let url = folder.appendingPathComponent("framework.json")
+        guard let data = try? Data(contentsOf: url) else { return nil }
+        guard (try? JSONSerialization.jsonObject(with: data)) != nil,
+              let text = String(data: data, encoding: .utf8) else {
+            #if DEBUG
+            print("[GameLibrary] Ignoring invalid framework.json in \(folder.lastPathComponent)")
+            #endif
+            return nil
+        }
+        return text
     }
 
     /// RPG Maker MZ stores the game's title in data/System.json under "gameTitle".

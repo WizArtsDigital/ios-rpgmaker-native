@@ -1,0 +1,30 @@
+============================================================
+
+■■■■■ RPG MAKER ACTION COMBAT ■■■■■
+A plugin to create active battle system in RPG Maker MZ,
+created by Sang Hendrix - https://sanghendrix.itch.io
+
+============================================================
+
+Thank you for purchasing RPG Maker Action Combat.
+
+To learn how to use this plugin, please visit:
+https://rpgmakeractioncombat.com
+or https://www.youtube.com/@SangHendrix
+
+Studying from the sample project is also a good method.
+
+Note that the sample project doesn't cover all aspect of the plugin.
+The plugin extends features for the eventing system, therefore
+the better you are at eventing, the more unique stuff you'll
+be able to create.
+
+============================================================
+
+TERMS OF USE
+■ https://www.sanghendrix.com/p/terms-of-service-license.html
+
+============================================================
+
+For support, please visit Discord: https://discord.gg/YKPscqHV8b
+Patreon: https://www.patreon.com/SangHendrix

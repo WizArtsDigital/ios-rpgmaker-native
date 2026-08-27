@@ -44,36 +44,12 @@ The folder must contain index.html at its top level. If it has data/System.json 
 Because "Games" is a folder reference in Xcode (blue folder), anything you drop in is picked up automatically on the next build - no need to add files in Xcode.
 Repeat for as many games as you want. Delete the sample "Hello World" folder when you no longer need it.
 
-Step 4: Allow MZ to start without focus (2 METHODS)
+Step 4: There is no step 4.
+Older versions of this framework required editing js/rmmz_managers.js (the SceneManager.isGameActive focus patch) or the game sat on a black screen. The framework now injects that fix - and a fetch() fallback some plugins need - into every game automatically (Runtime/RPGMakerCompatScript.swift), so drop in the export exactly as RPG Maker produced it. Games that were patched by hand still work.
 
-METHOD 1:
-Navigate to Games > <your game> > js > rmmz_managers.js
+Audio: keep the .ogg files exactly as exported. iOS can't decode Ogg Vorbis natively, but MZ ships its own decoder (js/libs/vorbisdecoder.js) and the framework makes sure MZ uses it, so sound and BGM loop points (LOOPSTART / LOOPLENGTH) work without converting anything. Don't convert to .m4a - MZ only reads loop tags from Ogg files, so converted music would stop looping.
 
-Search for the SceneManager.isGameActive function - this will be located around line 2107. 
-
-Replace the code with the following in order skip the check on focus:
-
-
-
-SceneManager.isGameActive = function() {
-    return true;
-    try {
-        return window.top.document.hasFocus();
-    } catch (e) {
-        // SecurityError
-        return true;
-    }
-};
-
-
-
-
-METHOD 2:
-If you don’t feel like replacing the code in Method 1, copy the rmmz_managers.js file from the sample "Hello World" game (it already has the change) over your own game's
-
-js > rmmz_managers.js
-
-WARNING: YOUR MZ GAME WILL NOT WORK IF YOU DO NOT DO THIS STEP!!!!!!!!!!!!!!
+Tip: delete anything in the game folder that isn't part of the game (READ ME.txt, Terms_of_Use.pdf, .url shortcuts) - everything in Games/ ships inside the app bundle.
 
 And that’s it! You can now run your games in the simulator, or plug in an iOS/iPadOS device (so long as you have developer permissions). 
 
@@ -104,6 +80,20 @@ Default mapping (same as RPG Maker MZ's own Input.gamepadMapper, so games behave
 To change the mapping, edit the `bind(...)` calls in GameControllerBridge.attach. Triggers, right stick, Share/Create and the touchpad are intentionally unmapped - bind them there if a game needs them.
 
 How it works: Controllers/GamepadBridgeScript.swift is injected into every game before its scripts run and exposes window.RPGMakerFrameworkGamepad. Native button changes are sent with evaluateJavaScript and written straight into Input._currentState, which is exactly what RPG Maker's own gamepad polling does. While a controller is connected, MZ's browser polling is bypassed so input is never double-counted; with no controller it runs as normal.
+
+Per-Game Settings: framework.json (optional)
+Drop a framework.json next to a game's index.html to configure the framework's runtime layer for that game only. Currently supported:
+
+  {
+    "gestures": {
+      "twoFingerTap":   { "key": "U" },
+      "threeFingerTap": { "key": "Escape" }
+    }
+  }
+
+Multi-finger taps are delivered to the game as real keyboard presses (document keydown/keyup), so MZ's Input.keyMapper and key-remapping plugins such as Hendrix_Keyboard_Gamepad treat them exactly like a keyboard. Key names: a single letter or digit, Space, Enter, Escape, Shift, Control, Tab, Up/Down/Left/Right. While a two-finger gesture is bound, MZ's default two-finger "cancel" is suppressed. Single taps are untouched - normal RPG Maker tap-to-move keeps working.
+
+Example - the bundled Hendrix action-combat sample: its export shipped with "Move via Cursor" off and Attack bound to "U, leftclick", which on a phone means every tap attacks and nothing moves. Two plugin settings were changed in js/plugins.js (Action Engine "Move via Cursor" = true; Keyboard/Gamepad Attack "To Key" = "U") and its framework.json binds twoFingerTap to U. Result: tap to move, two-finger tap to attack, and a physical controller still attacks with X via the plugin's own gamepad mapping. The original plugins.js is kept in _backups/ at the repo root.
 
 Customizing the Library Screen
 Everything you see before a game starts lives in Views/GameLibraryView.swift. It is plain SwiftUI, so this is the place to add features such as In-App Purchases, Ads, a settings screen, or a different look for the game grid. GamePlayerView.swift owns the full-screen game and the exit button; GameWebView.swift is the only file that talks to WebKit.

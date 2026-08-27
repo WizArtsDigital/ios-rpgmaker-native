@@ -19,6 +19,7 @@
 		B100000000000000000000AB /* GameControllerMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000FB /* GameControllerMonitor.swift */; };
 		B100000000000000000000AC /* GameControllerBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000FC /* GameControllerBridge.swift */; };
 		B100000000000000000000AD /* GamepadBridgeScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000FD /* GamepadBridgeScript.swift */; };
+		B100000000000000000000AE /* RPGMakerCompatScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000FE /* RPGMakerCompatScript.swift */; };
 		B100000000000000000000A7 /* Games in Resources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000F7 /* Games */; };
 		A36ED01B25CDD5B8000E5717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A36ED01A25CDD5B8000E5717 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		B100000000000000000000FB /* GameControllerMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerMonitor.swift; sourceTree = "<group>"; };
 		B100000000000000000000FC /* GameControllerBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerBridge.swift; sourceTree = "<group>"; };
 		B100000000000000000000FD /* GamepadBridgeScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamepadBridgeScript.swift; sourceTree = "<group>"; };
+		B100000000000000000000FE /* RPGMakerCompatScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGMakerCompatScript.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				B1000000000000000000000B /* Models */,
 				B1000000000000000000000C /* Views */,
 				B1000000000000000000000D /* Controllers */,
+				B1000000000000000000000E /* Runtime */,
 				B100000000000000000000F7 /* Games */,
 				A36ED01A25CDD5B8000E5717 /* Assets.xcassets */,
 				A36ED01F25CDD5B8000E5717 /* Info.plist */,
@@ -112,6 +115,14 @@
 				B100000000000000000000FD /* GamepadBridgeScript.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B1000000000000000000000E /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				B100000000000000000000FE /* RPGMakerCompatScript.swift */,
+			);
+			path = Runtime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 				B100000000000000000000AB /* GameControllerMonitor.swift in Sources */,
 				B100000000000000000000AC /* GameControllerBridge.swift in Sources */,
 				B100000000000000000000AD /* GamepadBridgeScript.swift in Sources */,
+				B100000000000000000000AE /* RPGMakerCompatScript.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

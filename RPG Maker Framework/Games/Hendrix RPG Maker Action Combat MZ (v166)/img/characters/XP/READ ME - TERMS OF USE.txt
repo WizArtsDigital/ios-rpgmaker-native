@@ -1,0 +1,2 @@
+These are RPG Maker XP RTP, you cannot use them in your game project unless you own RPG Maker XP.
+The resources here are only to help demonstrate the sample project.

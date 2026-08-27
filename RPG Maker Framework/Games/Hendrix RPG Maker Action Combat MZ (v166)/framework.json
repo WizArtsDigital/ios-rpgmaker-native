@@ -1,0 +1,6 @@
+{
+  "_comment": "RPG Maker Framework per-game settings. Two-finger tap = Attack (keyboard U, as bound in Hendrix_Keyboard_Gamepad). Single tap moves (Action Engine 'Move via Cursor' is on).",
+  "gestures": {
+    "twoFingerTap": { "key": "U" }
+  }
+}

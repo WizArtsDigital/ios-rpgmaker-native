@@ -33,14 +33,32 @@ struct GameWebView: UIViewRepresentable {
         // blocks by default. This is the same switch the original UIKit version used.
         configuration.preferences.setValue(true, forKey: "allowFileAccessFromFileURLs")
 
-        // Controller bridge: define window.RPGMakerFrameworkGamepad before any
-        // game script runs (see GamepadBridgeScript / GameControllerBridge).
-        let gamepadScript = WKUserScript(
-            source: GamepadBridgeScript.source,
-            injectionTime: .atDocumentStart,
-            forMainFrameOnly: true
+        // Scripts injected before any game code runs, in this order:
+        //   1. Compatibility fixes (focus check, fetch() on file://) — without
+        //      these an unpatched export sits on a black screen.
+        //   2. Controller bridge (window.RPGMakerFrameworkGamepad).
+        //   3. DEBUG only: mirror JS errors into Xcode's console.
+        let contentController = configuration.userContentController
+        // 0. Per-game settings from framework.json (already validated as JSON).
+        let configJSON = game.frameworkConfigJSON ?? "{}"
+        contentController.addUserScript(
+            WKUserScript(
+                source: "window.RPGMakerFrameworkConfig = \(configJSON);",
+                injectionTime: .atDocumentStart,
+                forMainFrameOnly: true
+            )
         )
-        configuration.userContentController.addUserScript(gamepadScript)
+        for source in [RPGMakerCompatScript.source, GamepadBridgeScript.source] {
+            contentController.addUserScript(
+                WKUserScript(source: source, injectionTime: .atDocumentStart, forMainFrameOnly: true)
+            )
+        }
+        #if DEBUG
+        contentController.add(context.coordinator, name: Coordinator.logHandlerName)
+        contentController.addUserScript(
+            WKUserScript(source: RPGMakerCompatScript.debugLoggingSource, injectionTime: .atDocumentStart, forMainFrameOnly: true)
+        )
+        #endif
 
         let webView = WKWebView(frame: .zero, configuration: configuration)
         webView.uiDelegate = context.coordinator
@@ -70,13 +88,18 @@ struct GameWebView: UIViewRepresentable {
     static func dismantleUIView(_ webView: WKWebView, coordinator: Coordinator) {
         coordinator.controllerBridge?.tearDown()
         coordinator.controllerBridge = nil
+        #if DEBUG
+        webView.configuration.userContentController.removeScriptMessageHandler(forName: Coordinator.logHandlerName)
+        #endif
         UIApplication.shared.isIdleTimerDisabled = false
         webView.stopLoading()
         webView.uiDelegate = nil
         webView.navigationDelegate = nil
     }
 
-    final class Coordinator: NSObject, WKUIDelegate, WKNavigationDelegate {
+    final class Coordinator: NSObject, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler {
+        static let logHandlerName = "rpgmakerLog"
+
         var onAlert: (JavaScriptAlert) -> Void
         var controllerBridge: GameControllerBridge?
 
@@ -88,6 +111,44 @@ struct GameWebView: UIViewRepresentable {
         /// is already attached (handlers were set up before the page existed).
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
             controllerBridge?.resync()
+        }
+
+        // MARK: Load failures — surface them instead of leaving a black screen
+
+        func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+            reportLoadFailure(error)
+        }
+
+        func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+            reportLoadFailure(error)
+        }
+
+        func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
+            // WebKit killed the page (usually memory pressure on a heavy game).
+            onAlert(JavaScriptAlert(
+                message: "The game's web process stopped unexpectedly (this is usually memory pressure). Exit and relaunch the game.",
+                dismiss: {}
+            ))
+        }
+
+        private func reportLoadFailure(_ error: Error) {
+            #if DEBUG
+            print("[Game] Load failed: \(error)")
+            #endif
+            onAlert(JavaScriptAlert(
+                message: "Couldn't load the game: \(error.localizedDescription)",
+                dismiss: {}
+            ))
+        }
+
+        // MARK: DEBUG console mirror (see RPGMakerCompatScript.debugLoggingSource)
+
+        func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+            #if DEBUG
+            if message.name == Self.logHandlerName {
+                print("[Game JS] \(message.body)")
+            }
+            #endif
         }
 
         /// Surfaces JavaScript `alert()` calls (handy for debugging a game) as a SwiftUI alert.

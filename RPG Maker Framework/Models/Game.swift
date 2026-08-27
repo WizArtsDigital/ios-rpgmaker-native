@@ -24,4 +24,9 @@ nonisolated struct Game: Identifiable {
 
     /// `icon/icon.png` if the export includes one.
     let iconURL: URL?
+
+    /// Contents of an optional `framework.json` in the game folder — per-game
+    /// settings for the framework's runtime layer (touch gestures, etc.),
+    /// handed to the game as `window.RPGMakerFrameworkConfig`. See README.
+    let frameworkConfigJSON: String?
 }

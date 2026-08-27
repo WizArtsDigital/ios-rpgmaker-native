@@ -1,0 +1,7711 @@
+{
+  "Snow": {
+    "name": "Snow",
+    "layers": [
+      {
+        "id": 0,
+        "name": "Ice Aura",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 1,
+            "y": 1
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#00ffff",
+            "mid": "#4488ff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.4,
+            "max": 0.8
+          },
+          "frequency": 39,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 5,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 2,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke_01.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "ice",
+          "layerId": 0,
+          "_screenMode": false,
+          "_colorStartR": 0,
+          "_colorStartG": 255,
+          "_colorStartB": 255,
+          "_colorMidR": 68,
+          "_colorMidG": 136,
+          "_colorMidB": 255,
+          "_colorEndR": 255,
+          "_colorEndG": 255,
+          "_colorEndB": 255,
+          "_colorStartHex": 65535
+        }
+      },
+      {
+        "id": 1,
+        "name": "Snowflake",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 0.53,
+            "end": 0
+          },
+          "blendMode": "ADD",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 0.4,
+            "y": 0.4
+          },
+          "scaleIncrease": -0.07,
+          "scaleWiggle": 7,
+          "color": {
+            "start": "#00d9ff",
+            "mid": "#ffffff",
+            "end": "#00ffee"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 6
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 0.8
+          },
+          "frequency": 28,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 4,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/magic_04.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "ice",
+          "layerId": 1,
+          "_screenMode": false,
+          "_colorStartR": 0,
+          "_colorStartG": 217,
+          "_colorStartB": 255,
+          "_colorMidR": 255,
+          "_colorMidG": 255,
+          "_colorMidB": 255,
+          "_colorEndR": 0,
+          "_colorEndG": 255,
+          "_colorEndB": 238,
+          "_colorStartHex": 55807
+        }
+      },
+      {
+        "id": 2,
+        "name": "Particle",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 0.6,
+            "x": 0.5,
+            "y": 0.5
+          },
+          "scaleIncrease": -0.73,
+          "scaleWiggle": 14,
+          "color": {
+            "start": "#ffffff",
+            "mid": "#ffffff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.8
+          },
+          "frequency": 34,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 4,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 3,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": true,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "",
+          "layerId": 2,
+          "_screenMode": false,
+          "_colorStartR": 255,
+          "_colorStartG": 255,
+          "_colorStartB": 255,
+          "_colorMidR": 255,
+          "_colorMidG": 255,
+          "_colorMidB": 255,
+          "_colorEndR": 255,
+          "_colorEndG": 255,
+          "_colorEndB": 255,
+          "_colorStartHex": 16777215
+        }
+      },
+      {
+        "id": 3,
+        "name": "Mist",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.83,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 1,
+            "x": 1,
+            "y": 1
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#00ffff",
+            "mid": "#4488ff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.3,
+            "max": 0.4
+          },
+          "frequency": 36,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 6,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 2,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/twirl_04_a.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "ice"
+        }
+      }
+    ]
+  },
+  "Electric": {
+    "name": "Electric",
+    "layers": [
+      {
+        "id": 0,
+        "name": "Base",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 0.1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 0.6,
+            "y": 0.6
+          },
+          "scaleIncrease": -0.46,
+          "scaleWiggle": 11,
+          "color": {
+            "start": "#ffffff",
+            "mid": "#ffffff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 17.100753384225627,
+            "y": -489.70150523935695
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 500,
+            "wiggle": 16
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.1
+          },
+          "frequency": 20,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnType": "ring",
+          "zIndex": 4,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "spark_05.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": ""
+        }
+      },
+      {
+        "id": 1,
+        "name": "Layer 1",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 1,
+            "y": 1
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffff00",
+            "mid": "#00ffff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 96.16618620624075,
+            "y": -914.9601437388116
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1
+          },
+          "frequency": 45,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnType": "point",
+          "zIndex": 2,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "spark_02.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": "electric"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Layer 3",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 1,
+            "y": 1
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffff00",
+            "mid": "#00ffff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 0.6
+          },
+          "frequency": 47,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnType": "point",
+          "zIndex": 5,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "spark_03.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 30,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": "electric"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Layer 4",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 1,
+            "y": 1
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffff00",
+            "mid": "#00ffff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1
+          },
+          "frequency": 20,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnType": "point",
+          "zIndex": 2,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "smoke_06.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": "electric"
+        }
+      },
+      {
+        "id": 4,
+        "name": "Layer 5",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 1,
+            "y": 1
+          },
+          "scaleIncrease": -0.49,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffff00",
+            "mid": "#fff70a",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": -34.89949670250165,
+            "y": -999.3908270190957
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 136,
+            "startMax": 220,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 10
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 2.7
+          },
+          "frequency": 20,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnType": "point",
+          "zIndex": 2,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "spark_04.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": "electric"
+        }
+      },
+      {
+        "id": 5,
+        "name": "Layer 17",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "ADD",
+          "scale": {
+            "start": 0.1,
+            "end": 0.5,
+            "x": 1,
+            "y": 1
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 9,
+          "color": {
+            "start": "#ffff00",
+            "mid": "#00ffff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 26.17462252687596,
+            "y": -749.5431202643218
+          },
+          "speedIncrease": 3,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1
+          },
+          "frequency": 20,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnType": "point",
+          "zIndex": 2,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/spark_05.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": true,
+            "intensity": 0.5,
+            "radius": 10,
+            "color": "#ffe32e"
+          },
+          "_presetName": "",
+          "_colorPresetName": "electric"
+        }
+      }
+    ]
+  },
+  "Snow Storm": {
+    "name": "Snow Storm",
+    "layers": [
+      {
+        "id": 0,
+        "name": "Layer 1",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 0.9,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 0.8,
+            "y": 0.7
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffffff",
+            "mid": "#ffffff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 210
+          },
+          "acceleration": {
+            "x": -933.5804264972018,
+            "y": 358.36794954530023
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 8,
+          "rotation": {
+            "startMin": 117,
+            "startMax": 115,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 0,
+            "max": 180,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.7
+          },
+          "frequency": 35,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": true,
+          "spawnType": "rect",
+          "zIndex": 7,
+          "spawnRect": {
+            "width": 1840,
+            "height": 1810
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 15,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": ""
+        }
+      },
+      {
+        "id": 1,
+        "name": "Layer 1 Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.39,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.6,
+            "end": 0.8,
+            "x": 3.6,
+            "y": 3.5
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffffff",
+            "mid": "#ffffff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 210
+          },
+          "acceleration": {
+            "x": -933.5804264972018,
+            "y": 358.36794954530023
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 8,
+          "rotation": {
+            "startMin": 117,
+            "startMax": 115,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 0,
+            "max": 180,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.7
+          },
+          "frequency": 38,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": true,
+          "spawnType": "rect",
+          "zIndex": 7,
+          "spawnRect": {
+            "width": 1840,
+            "height": 1810
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 2,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke_04.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": ""
+        }
+      },
+      {
+        "id": 2,
+        "name": "Layer 1 Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 0.9,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 5,
+            "y": 0.4
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffffff",
+            "mid": "#ffffff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 210
+          },
+          "acceleration": {
+            "x": -933.5804264972018,
+            "y": 358.36794954530023
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 8,
+          "rotation": {
+            "startMin": 176,
+            "startMax": 147,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 0,
+            "max": 180,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.7
+          },
+          "frequency": 6,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": true,
+          "spawnType": "rect",
+          "zIndex": 7,
+          "spawnRect": {
+            "width": 1840,
+            "height": 1810
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 15,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "",
+          "trail": {
+            "enabled": true,
+            "length": 14,
+            "spacing": 1,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": ""
+        }
+      }
+    ]
+  },
+  "Sand Storm": {
+    "name": "Sand Storm",
+    "layers": [
+      {
+        "id": 0,
+        "name": "Layer 1",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 0.9,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 0.8,
+            "y": 0.7
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#6f6d6d",
+            "mid": "#6e4926",
+            "end": "#4a300d"
+          },
+          "speed": {
+            "min": 50,
+            "max": 210
+          },
+          "acceleration": {
+            "x": -933.5804264972018,
+            "y": 358.36794954530023
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 8,
+          "rotation": {
+            "startMin": 117,
+            "startMax": 115,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 0,
+            "max": 180,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.7
+          },
+          "frequency": 35,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": true,
+          "spawnType": "rect",
+          "zIndex": 7,
+          "spawnRect": {
+            "width": 1840,
+            "height": 1810
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 15,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": ""
+        }
+      },
+      {
+        "id": 1,
+        "name": "Layer 1 Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.65,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.6,
+            "end": 0.8,
+            "x": 3.6,
+            "y": 3.5
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#80611e",
+            "mid": "#724c18",
+            "end": "#634718"
+          },
+          "speed": {
+            "min": 50,
+            "max": 210
+          },
+          "acceleration": {
+            "x": -933.5804264972018,
+            "y": 358.36794954530023
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 8,
+          "rotation": {
+            "startMin": 117,
+            "startMax": 115,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 0,
+            "max": 180,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.7
+          },
+          "frequency": 38,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": true,
+          "spawnType": "rect",
+          "zIndex": 7,
+          "spawnRect": {
+            "width": 1840,
+            "height": 1810
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 2,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke_04.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": ""
+        }
+      },
+      {
+        "id": 2,
+        "name": "Layer 1 Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 0.9,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 5,
+            "y": 0.4
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffffff",
+            "mid": "#a6a23a",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 210
+          },
+          "acceleration": {
+            "x": -933.5804264972018,
+            "y": 358.36794954530023
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 8,
+          "rotation": {
+            "startMin": 176,
+            "startMax": 147,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 0,
+            "max": 180,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.7
+          },
+          "frequency": 6,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": true,
+          "spawnType": "rect",
+          "zIndex": 7,
+          "spawnRect": {
+            "width": 1840,
+            "height": 1810
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 15,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "",
+          "trail": {
+            "enabled": true,
+            "length": 14,
+            "spacing": 1,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": ""
+        }
+      }
+    ]
+  },
+  "Comet": {
+    "name": "Comet",
+    "layers": [
+      {
+        "id": 4,
+        "name": "Layer 1 Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 1,
+            "y": 1
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#00ffff",
+            "mid": "#4488ff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.1
+          },
+          "frequency": 47,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "circle",
+          "zIndex": 8,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 95
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 5,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke_01.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "ice"
+        }
+      },
+      {
+        "id": 5,
+        "name": "Layer 1 Copy Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.71,
+            "end": 0
+          },
+          "blendMode": "ADD",
+          "scale": {
+            "start": 0.1,
+            "end": 0.6,
+            "x": 0.3,
+            "y": 0.3
+          },
+          "scaleIncrease": -0.67,
+          "scaleWiggle": 10,
+          "color": {
+            "start": "#00ffff",
+            "mid": "#52fff3",
+            "end": "#14b1ff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 48,
+            "speedMax": 180,
+            "increase": 106,
+            "wiggle": 3,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 330,
+            "wiggle": 9
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.5
+          },
+          "frequency": 51,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "circle",
+          "zIndex": 8,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 130
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/dingbats-459.png",
+          "trail": {
+            "enabled": true,
+            "length": 12,
+            "spacing": 3,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": true,
+            "intensity": 0.5,
+            "radius": 15,
+            "color": "#c7f7ff"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "ice"
+        }
+      },
+      {
+        "id": 6,
+        "name": "Layer 1 Copy Copy Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.38,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.9,
+            "end": 1.2,
+            "x": 0.4,
+            "y": 0.4
+          },
+          "scaleIncrease": 0.2,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffffff",
+            "mid": "#75caff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 48,
+            "speedMax": 180,
+            "increase": 106,
+            "wiggle": 3,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 330,
+            "wiggle": 9
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.2
+          },
+          "frequency": 88,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "circle",
+          "zIndex": 6,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 95
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 2,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/energyball_5.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": true,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#badcee"
+          },
+          "unmult": true,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "ice"
+        }
+      },
+      {
+        "id": 7,
+        "name": "Layer 1",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 0.1,
+            "y": 0.1
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffffff",
+            "mid": "#e0f3ff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.1
+          },
+          "frequency": 47,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "circle",
+          "zIndex": 8,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 145
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 3,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/dingbats-458.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": true,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "ice",
+          "layerId": 7,
+          "_screenMode": false,
+          "_colorStartR": 255,
+          "_colorStartG": 255,
+          "_colorStartB": 255,
+          "_colorMidR": 224,
+          "_colorMidG": 243,
+          "_colorMidB": 255,
+          "_colorEndR": 255,
+          "_colorEndG": 255,
+          "_colorEndB": 255,
+          "_colorStartHex": 16777215
+        }
+      }
+    ]
+  },
+  "Fire Disc Trail": {
+    "name": "Fire Disc Trail",
+    "layers": [
+      {
+        "id": 22,
+        "name": "Fire Aura",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.47,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 1.3,
+            "x": 0.5,
+            "y": 0.4
+          },
+          "scaleIncrease": -0.35,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffbb00",
+            "mid": "#ff0000",
+            "end": "#ff0000"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.3,
+            "max": 1.1
+          },
+          "frequency": 39,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 3,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 2,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke_01.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": true,
+            "intensity": 2,
+            "radius": 20,
+            "color": "#fbaf2d"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire",
+          "layerId": 22,
+          "_screenMode": false,
+          "_colorStartR": 255,
+          "_colorStartG": 187,
+          "_colorStartB": 0,
+          "_colorMidR": 255,
+          "_colorMidG": 0,
+          "_colorMidB": 0,
+          "_colorEndR": 255,
+          "_colorEndG": 0,
+          "_colorEndB": 0,
+          "_colorStartHex": 16759552
+        }
+      },
+      {
+        "id": 23,
+        "name": "Fire Base",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.58,
+            "end": 0
+          },
+          "blendMode": "ADD",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 1,
+            "y": 1
+          },
+          "scaleIncrease": -0.5,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ff2600",
+            "mid": "#ff6600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 1.17,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 9,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.2,
+            "max": 0.7
+          },
+          "frequency": 81,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 6,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/flame_02.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 3,
+            "radius": 25,
+            "color": "#f3ad5e"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire",
+          "layerId": 23,
+          "_screenMode": false,
+          "_colorStartR": 255,
+          "_colorStartG": 38,
+          "_colorStartB": 0,
+          "_colorMidR": 255,
+          "_colorMidG": 102,
+          "_colorMidB": 0,
+          "_colorEndR": 255,
+          "_colorEndG": 170,
+          "_colorEndB": 0,
+          "_colorStartHex": 16721408
+        }
+      },
+      {
+        "id": 24,
+        "name": "Particle",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "ADD",
+          "scale": {
+            "start": 0.1,
+            "end": 0.7,
+            "x": 1,
+            "y": 1
+          },
+          "scaleIncrease": -0.83,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffee00",
+            "mid": "#ff0000",
+            "end": "#feba01"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 1.7,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 180,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.1,
+            "max": 2.5
+          },
+          "frequency": 31,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 3,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "",
+          "trail": {
+            "enabled": true,
+            "length": 8,
+            "spacing": 1,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2.5,
+            "radius": 25,
+            "color": "#fe9634"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire",
+          "layerId": 24,
+          "_screenMode": false,
+          "_colorStartR": 255,
+          "_colorStartG": 238,
+          "_colorStartB": 0,
+          "_colorMidR": 255,
+          "_colorMidG": 0,
+          "_colorMidB": 0,
+          "_colorEndR": 254,
+          "_colorEndG": 186,
+          "_colorEndB": 1,
+          "_colorStartHex": 16772608
+        }
+      },
+      {
+        "id": 25,
+        "name": "Wind",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 0.6,
+            "y": 0.6
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ff6600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1
+          },
+          "frequency": 57,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 8,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/twirl_01.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2.5,
+            "radius": 35,
+            "color": "#00ff08"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      }
+    ]
+  },
+  "Fire Disc": {
+    "name": "Fire Disc",
+    "layers": [
+      {
+        "id": 30,
+        "name": "Fire Aura",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.47,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 1.3,
+            "x": 0.5,
+            "y": 0.4
+          },
+          "scaleIncrease": -0.35,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffbb00",
+            "mid": "#ff0000",
+            "end": "#ff0000"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.3,
+            "max": 1.1
+          },
+          "frequency": 39,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 8,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 2,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke_01.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": true,
+            "intensity": 2,
+            "radius": 20,
+            "color": "#fbaf2d"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire",
+          "layerId": 30,
+          "_screenMode": false,
+          "_colorStartR": 255,
+          "_colorStartG": 187,
+          "_colorStartB": 0,
+          "_colorMidR": 255,
+          "_colorMidG": 0,
+          "_colorMidB": 0,
+          "_colorEndR": 255,
+          "_colorEndG": 0,
+          "_colorEndB": 0,
+          "_colorStartHex": 16759552
+        }
+      },
+      {
+        "id": 31,
+        "name": "Fire Base",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.58,
+            "end": 0
+          },
+          "blendMode": "ADD",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 1,
+            "y": 1
+          },
+          "scaleIncrease": -0.5,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ff2600",
+            "mid": "#ff6600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 1.17,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 9,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.2,
+            "max": 0.7
+          },
+          "frequency": 81,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 8,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/flame_02.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 3,
+            "radius": 25,
+            "color": "#f3ad5e"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire",
+          "layerId": 31,
+          "_screenMode": false,
+          "_colorStartR": 255,
+          "_colorStartG": 38,
+          "_colorStartB": 0,
+          "_colorMidR": 255,
+          "_colorMidG": 102,
+          "_colorMidB": 0,
+          "_colorEndR": 255,
+          "_colorEndG": 170,
+          "_colorEndB": 0,
+          "_colorStartHex": 16721408
+        }
+      },
+      {
+        "id": 32,
+        "name": "Particle",
+        "visible": false,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "ADD",
+          "scale": {
+            "start": 0.1,
+            "end": 0.7,
+            "x": 1,
+            "y": 1
+          },
+          "scaleIncrease": -0.83,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffee00",
+            "mid": "#ff0000",
+            "end": "#feba01"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 1.7,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 180,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.1,
+            "max": 2.5
+          },
+          "frequency": 31,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 3,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "",
+          "trail": {
+            "enabled": true,
+            "length": 8,
+            "spacing": 1,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2.5,
+            "radius": 25,
+            "color": "#fe9634"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      },
+      {
+        "id": 33,
+        "name": "Wind",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 0.6,
+            "y": 0.6
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ff6600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1
+          },
+          "frequency": 57,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 7,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/twirl_01.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2.5,
+            "radius": 35,
+            "color": "#00ff08"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      }
+    ]
+  },
+  "Fire Dagger": {
+    "name": "Fire Dagger",
+    "layers": [
+      {
+        "id": 0,
+        "name": "Layer 1 Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.41,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 1,
+            "x": 0.3,
+            "y": 0.5
+          },
+          "scaleIncrease": -0.52,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ff6600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 90
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": -0.01,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 52,
+            "wiggle": 6
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.1,
+            "max": 0.3
+          },
+          "frequency": 78,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "circle",
+          "zIndex": 2,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 4,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/fire_01.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire",
+          "layerId": 0,
+          "_screenMode": false,
+          "_colorStartR": 255,
+          "_colorStartG": 51,
+          "_colorStartB": 0,
+          "_colorMidR": 255,
+          "_colorMidG": 102,
+          "_colorMidB": 0,
+          "_colorEndR": 255,
+          "_colorEndG": 170,
+          "_colorEndB": 0,
+          "_colorStartHex": 16724736
+        }
+      },
+      {
+        "id": 1,
+        "name": "Layer 1",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 1.1,
+            "x": 0.2,
+            "y": 0.3
+          },
+          "scaleIncrease": -0.12,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ff6600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 90
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0.27,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 6
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.1,
+            "max": 0.3
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "circle",
+          "zIndex": 4,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 5,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/fire_01.png",
+          "trail": {
+            "enabled": false,
+            "length": 15,
+            "spacing": 1,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire",
+          "layerId": 1,
+          "_screenMode": false,
+          "_colorStartR": 255,
+          "_colorStartG": 51,
+          "_colorStartB": 0,
+          "_colorMidR": 255,
+          "_colorMidG": 102,
+          "_colorMidB": 0,
+          "_colorEndR": 255,
+          "_colorEndG": 170,
+          "_colorEndB": 0,
+          "_colorStartHex": 16724736
+        }
+      },
+      {
+        "id": 2,
+        "name": "Layer 1 Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.58,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 1.1,
+            "x": 0.3,
+            "y": 0.2
+          },
+          "scaleIncrease": 0.32,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ff6600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 50
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0.27,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 126,
+            "wiggle": 6
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.1,
+            "max": 0.4
+          },
+          "frequency": 78,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "circle",
+          "zIndex": 4,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 5,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/flame_02.png",
+          "trail": {
+            "enabled": false,
+            "length": 16,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": true,
+            "intensity": 1.5,
+            "radius": 10,
+            "color": "#ff5900"
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire",
+          "layerId": 2,
+          "_screenMode": false,
+          "_colorStartR": 255,
+          "_colorStartG": 51,
+          "_colorStartB": 0,
+          "_colorMidR": 255,
+          "_colorMidG": 102,
+          "_colorMidB": 0,
+          "_colorEndR": 255,
+          "_colorEndG": 170,
+          "_colorEndB": 0,
+          "_colorStartHex": 16724736
+        }
+      },
+      {
+        "id": 3,
+        "name": "Layer 1 Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "ADD",
+          "scale": {
+            "start": 0.1,
+            "end": 1.1,
+            "x": 0.2,
+            "y": 0.3
+          },
+          "scaleIncrease": -0.12,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ff6600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 500
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": -0.63,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 20
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": -130,
+            "wiggle": 19
+          },
+          "lifetime": {
+            "min": 0.1,
+            "max": 0.3
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "circle",
+          "zIndex": 4,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 5,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "",
+          "trail": {
+            "enabled": true,
+            "length": 3,
+            "spacing": 1,
+            "fadeMode": "linear",
+            "widthScale": 0.2
+          },
+          "glow": {
+            "enabled": true,
+            "intensity": 0.5,
+            "radius": 5,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      }
+    ]
+  },
+  "Snowflake": {
+    "name": "Snowflake",
+    "layers": [
+      {
+        "id": 1,
+        "name": "Ice Aura",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 0.55,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 0.6,
+            "y": 0.4
+          },
+          "scaleIncrease": 0.34,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffffff",
+            "mid": "#96edfd",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 73,
+            "wiggle": 0,
+            "fixToCenter": true
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.4,
+            "max": 0.7
+          },
+          "frequency": 74,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 5,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/spark_01_a.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": true,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "ice"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Snowflake",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 0.53,
+            "end": 0
+          },
+          "blendMode": "ADD",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 0.1,
+            "y": 0.1
+          },
+          "scaleIncrease": -0.07,
+          "scaleWiggle": 7,
+          "color": {
+            "start": "#00d9ff",
+            "mid": "#ffffff",
+            "end": "#00ffee"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 6
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.3
+          },
+          "frequency": 28,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 4,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/dingbats-459.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "ice"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Particle",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 0.6,
+            "x": 0.5,
+            "y": 0.5
+          },
+          "scaleIncrease": -0.73,
+          "scaleWiggle": 14,
+          "color": {
+            "start": "#ffffff",
+            "mid": "#ffffff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.8
+          },
+          "frequency": 34,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 6,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 3,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": true,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "",
+          "layerId": 3,
+          "_screenMode": false,
+          "_colorStartR": 255,
+          "_colorStartG": 255,
+          "_colorStartB": 255,
+          "_colorMidR": 255,
+          "_colorMidG": 255,
+          "_colorMidB": 255,
+          "_colorEndR": 255,
+          "_colorEndG": 255,
+          "_colorEndB": 255,
+          "_colorStartHex": 16777215
+        }
+      },
+      {
+        "id": 4,
+        "name": "Mist",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.78,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 1,
+            "x": 1,
+            "y": 1
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#00ffff",
+            "mid": "#4488ff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.3,
+            "max": 0.4
+          },
+          "frequency": 36,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 6,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 2,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/magic_particles_14.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "ice"
+        }
+      }
+    ]
+  },
+  "Ice Comet": {
+    "name": "Ice Comet",
+    "layers": [
+      {
+        "id": 26,
+        "name": "Layer 1 Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 1,
+            "y": 1
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#00ffff",
+            "mid": "#4488ff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 490.56122714480176,
+            "y": -426.4383688438298
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.1
+          },
+          "frequency": 47,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "circle",
+          "zIndex": 8,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 95
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 5,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke_01.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": "ice"
+        }
+      },
+      {
+        "id": 27,
+        "name": "Layer 1 Copy Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "ADD",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 0.7,
+            "y": 0.7
+          },
+          "scaleIncrease": -0.46,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#00ffff",
+            "mid": "#ffffff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 490.56122714480176,
+            "y": -426.4383688438298
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 48,
+            "speedMax": 180,
+            "increase": 106,
+            "wiggle": 3
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 330,
+            "wiggle": 9
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.5
+          },
+          "frequency": 21,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "circle",
+          "zIndex": 8,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 95
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/magic_04.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": "ice"
+        }
+      },
+      {
+        "id": 29,
+        "name": "Layer 1",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 1,
+            "y": 1
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffffff",
+            "mid": "#e0f3ff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 490.56122714480176,
+            "y": -426.4383688438298
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1
+          },
+          "frequency": 47,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "circle",
+          "zIndex": 8,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 145
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 3,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": "ice"
+        }
+      },
+      {
+        "id": 28,
+        "name": "Layer 1 Copy Copy Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.16,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.5,
+            "end": 1.6,
+            "x": 0.7,
+            "y": 0.7
+          },
+          "scaleIncrease": -0.46,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffffff",
+            "mid": "#75caff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 490.56122714480176,
+            "y": -426.4383688438298
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 48,
+            "speedMax": 180,
+            "increase": 106,
+            "wiggle": 3
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 330,
+            "wiggle": 9
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.7
+          },
+          "frequency": 93,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "circle",
+          "zIndex": 6,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 95
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 6,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke_06.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": true,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#badcee"
+          },
+          "_presetName": "",
+          "_colorPresetName": "ice"
+        }
+      }
+    ]
+  },
+  "Fire Wall": {
+    "name": "Fire Wall",
+    "layers": [
+      {
+        "id": 3,
+        "name": "Smoke",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.51,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 1.1,
+            "x": 0.5,
+            "y": 0.5
+          },
+          "scaleIncrease": -0.37,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#616161",
+            "mid": "#787878",
+            "end": "#878787"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 2.5,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 88,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 275,
+            "max": 278,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 2
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "rect",
+          "zIndex": 2,
+          "spawnRect": {
+            "width": 400,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 6,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke3_13.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.4
+          },
+          "cellShading": {
+            "enabled": true,
+            "strength": 14,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      },
+      {
+        "id": 4,
+        "name": "Red Smoke",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.48,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 1.1,
+            "x": 0.5,
+            "y": 0.5
+          },
+          "scaleIncrease": -0.37,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#d50101",
+            "mid": "#c70505",
+            "end": "#feb416"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 2.5,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 88,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 275,
+            "max": 278,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "rect",
+          "zIndex": 2,
+          "spawnRect": {
+            "width": 400,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 6,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke_07.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      },
+      {
+        "id": 5,
+        "name": "Fire",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 1.5,
+            "x": 0.5,
+            "y": 0.3
+          },
+          "scaleIncrease": -0.37,
+          "scaleWiggle": 9,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ff6600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 2.5,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 88,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 249,
+            "max": 299,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.1,
+            "max": 1.4
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "rect",
+          "zIndex": 3,
+          "spawnRect": {
+            "width": 400,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 6,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/fire_31.png",
+          "trail": {
+            "enabled": false,
+            "length": 8,
+            "spacing": 1,
+            "fadeMode": "linear",
+            "widthScale": 0.2
+          },
+          "glow": {
+            "enabled": true,
+            "intensity": 1,
+            "radius": 35,
+            "color": "#f96210"
+          },
+          "unmult": true,
+          "alphaGate": {
+            "enabled": true,
+            "strength": 0.87
+          },
+          "cellShading": {
+            "enabled": true,
+            "strength": 8,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 7
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      },
+      {
+        "id": 6,
+        "name": "Particles",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.7,
+            "x": 0.3,
+            "y": 0.3
+          },
+          "scaleIncrease": -0.37,
+          "scaleWiggle": 9,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ffdd00",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 2.5,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 88,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 238,
+            "max": 299,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.8,
+            "max": 2.4
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "rect",
+          "zIndex": 2,
+          "spawnRect": {
+            "width": 400,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 2,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "",
+          "trail": {
+            "enabled": false,
+            "length": 3,
+            "spacing": 1,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.71
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      }
+    ]
+  },
+  "Ice Wall": {
+    "name": "Ice Wall",
+    "layers": [
+      {
+        "id": 0,
+        "name": "Layer 1 Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.42,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 1,
+            "y": 1
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#00ffff",
+            "mid": "#4488ff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": -0.67,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 0.7
+          },
+          "frequency": 20,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 4,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke2_1.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "ice"
+        }
+      },
+      {
+        "id": 1,
+        "name": "Layer 1",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.53,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 0.4,
+            "y": 1
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffffff",
+            "mid": "#ffffff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 0.7
+          },
+          "frequency": 64,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 4,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/magic_particles_8.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "ice"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Layer 1 Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.79,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.5,
+            "x": 0.3,
+            "y": 0.3
+          },
+          "scaleIncrease": -0.51,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#00ffff",
+            "mid": "#4488ff",
+            "end": "#38d7ff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 200,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 195,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1.5
+          },
+          "frequency": 10,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 4,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/dingbats-459.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "ice"
+        }
+      }
+    ]
+  },
+  "Torch": {
+    "name": "Torch",
+    "layers": [
+      {
+        "id": 52,
+        "name": "Layer 1 Copy Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.44,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 0.3,
+            "y": 0.5
+          },
+          "scaleIncrease": -0.23,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#919191",
+            "mid": "#a6a6a6",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 60
+          },
+          "acceleration": {
+            "x": -34.89949670250165,
+            "y": -999.3908270190957
+          },
+          "speedIncrease": -0.87,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 1,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.3,
+            "max": 0.7
+          },
+          "frequency": 81,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 3,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 2,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke_01.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 0.5,
+            "radius": 30,
+            "color": "#f17c0e"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "dark"
+        }
+      },
+      {
+        "id": 53,
+        "name": "Layer 1",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "ADD",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 0.3,
+            "y": 0.2
+          },
+          "scaleIncrease": -0.23,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ff6600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": -24.77864265877617,
+            "y": -709.5674871835579
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.3,
+            "max": 0.7
+          },
+          "frequency": 72,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnType": "point",
+          "zIndex": 5,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/flame_04.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": true,
+            "intensity": 0.5,
+            "radius": 30,
+            "color": "#f17c0e"
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire",
+          "layerId": 53,
+          "_screenMode": false,
+          "_colorStartR": 255,
+          "_colorStartG": 51,
+          "_colorStartB": 0,
+          "_colorMidR": 255,
+          "_colorMidG": 102,
+          "_colorMidB": 0,
+          "_colorEndR": 255,
+          "_colorEndG": 170,
+          "_colorEndB": 0,
+          "_colorStartHex": 16724736
+        }
+      },
+      {
+        "id": 54,
+        "name": "Layer 2",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "ADD",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 0.4,
+            "y": 0.3
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ff6600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 32.78554265973885,
+            "y": -468.85510362211744
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 9
+          },
+          "lifetime": {
+            "min": 0.2,
+            "max": 0.8
+          },
+          "frequency": 38,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnType": "point",
+          "zIndex": 4,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire",
+          "layerId": 54,
+          "_screenMode": false,
+          "_colorStartR": 255,
+          "_colorStartG": 51,
+          "_colorStartB": 0,
+          "_colorMidR": 255,
+          "_colorMidG": 102,
+          "_colorMidB": 0,
+          "_colorEndR": 255,
+          "_colorEndG": 170,
+          "_colorEndB": 0,
+          "_colorStartHex": 16724736
+        }
+      },
+      {
+        "id": 55,
+        "name": "Layer 1 Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "ADD",
+          "scale": {
+            "start": 0.1,
+            "end": 0.3,
+            "x": 1.1,
+            "y": 0.9
+          },
+          "scaleIncrease": -0.23,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#fedf16",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 60
+          },
+          "acceleration": {
+            "x": -34.89949670250165,
+            "y": -999.3908270190957
+          },
+          "speedIncrease": -0.87,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 1
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.3,
+            "max": 0.7
+          },
+          "frequency": 6,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnType": "point",
+          "zIndex": 5,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/flame_02.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 0.5,
+            "radius": 30,
+            "color": "#f17c0e"
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire",
+          "layerId": 55,
+          "_screenMode": false,
+          "_colorStartR": 255,
+          "_colorStartG": 51,
+          "_colorStartB": 0,
+          "_colorMidR": 254,
+          "_colorMidG": 223,
+          "_colorMidB": 22,
+          "_colorEndR": 255,
+          "_colorEndG": 170,
+          "_colorEndB": 0,
+          "_colorStartHex": 16724736
+        }
+      }
+    ]
+  },
+  "Fireball Spray": {
+    "name": "Fireball Spray",
+    "layers": [
+      {
+        "id": 0,
+        "name": "Layer 1",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.38,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.4,
+            "end": 0.5,
+            "x": 0.3,
+            "y": 0.3
+          },
+          "scaleIncrease": -0.28,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ff6600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.3,
+            "max": 0.5
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 2,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke3_14.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      },
+      {
+        "id": 1,
+        "name": "Layer 1 Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.3,
+            "end": 0.8,
+            "x": 0.4,
+            "y": 0.4
+          },
+          "scaleIncrease": -0.1,
+          "scaleWiggle": 3,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ff6600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 18
+          },
+          "lifetime": {
+            "min": 0.3,
+            "max": 0.5
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 2,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 2,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/fire_7.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": true,
+            "intensity": 1,
+            "radius": 15,
+            "color": "#fe8616"
+          },
+          "unmult": true,
+          "alphaGate": {
+            "enabled": true,
+            "strength": 0.66
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      }
+    ]
+  },
+  "FireWall Pixelate": {
+    "name": "FireWall Pixelate",
+    "layers": [
+      {
+        "id": 17,
+        "name": "Layer 1 Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.51,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 1.1,
+            "x": 0.5,
+            "y": 0.5
+          },
+          "scaleIncrease": -0.37,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#616161",
+            "mid": "#787878",
+            "end": "#878787"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 2.5,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 88,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 275,
+            "max": 278,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 2
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "rect",
+          "zIndex": 2,
+          "spawnRect": {
+            "width": 400,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 6,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke_07.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": true,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": true,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      },
+      {
+        "id": 18,
+        "name": "Layer 1",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.48,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 1.1,
+            "x": 0.5,
+            "y": 0.5
+          },
+          "scaleIncrease": -0.37,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#d50101",
+            "mid": "#c70505",
+            "end": "#feb416"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 2.5,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 88,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 275,
+            "max": 278,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "rect",
+          "zIndex": 2,
+          "spawnRect": {
+            "width": 400,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 6,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke_07.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire",
+          "layerId": 18,
+          "_screenMode": false,
+          "_colorStartR": 213,
+          "_colorStartG": 1,
+          "_colorStartB": 1,
+          "_colorMidR": 199,
+          "_colorMidG": 5,
+          "_colorMidB": 5,
+          "_colorEndR": 254,
+          "_colorEndG": 180,
+          "_colorEndB": 22,
+          "_colorStartHex": 13959425
+        }
+      },
+      {
+        "id": 19,
+        "name": "Layer 1 Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 1.5,
+            "x": 0.5,
+            "y": 0.3
+          },
+          "scaleIncrease": -0.37,
+          "scaleWiggle": 9,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ff6600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 2.5,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 88,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 249,
+            "max": 299,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.1,
+            "max": 1.4
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "rect",
+          "zIndex": 3,
+          "spawnRect": {
+            "width": 400,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 6,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke_01.png",
+          "trail": {
+            "enabled": false,
+            "length": 8,
+            "spacing": 1,
+            "fadeMode": "linear",
+            "widthScale": 0.2
+          },
+          "glow": {
+            "enabled": true,
+            "intensity": 1,
+            "radius": 35,
+            "color": "#f96210"
+          },
+          "alphaGate": {
+            "enabled": true,
+            "strength": 0.87
+          },
+          "cellShading": {
+            "enabled": true,
+            "strength": 8
+          },
+          "pixelate": {
+            "enabled": true,
+            "strength": 7
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire",
+          "layerId": 19,
+          "_screenMode": false,
+          "_colorStartR": 255,
+          "_colorStartG": 51,
+          "_colorStartB": 0,
+          "_colorMidR": 255,
+          "_colorMidG": 102,
+          "_colorMidB": 0,
+          "_colorEndR": 255,
+          "_colorEndG": 170,
+          "_colorEndB": 0,
+          "_colorStartHex": 16724736
+        }
+      },
+      {
+        "id": 20,
+        "name": "Layer 1 Copy Copy",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.7,
+            "x": 0.3,
+            "y": 0.3
+          },
+          "scaleIncrease": -0.37,
+          "scaleWiggle": 9,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ffdd00",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 2.5,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 88,
+            "wiggle": 0
+          },
+          "direction": {
+            "min": 238,
+            "max": 299,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.8,
+            "max": 2.4
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "rect",
+          "zIndex": 2,
+          "spawnRect": {
+            "width": 400,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 2,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "",
+          "trail": {
+            "enabled": false,
+            "length": 3,
+            "spacing": 1,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.71
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire",
+          "layerId": 20,
+          "_screenMode": false,
+          "_colorStartR": 255,
+          "_colorStartG": 51,
+          "_colorStartB": 0,
+          "_colorMidR": 255,
+          "_colorMidG": 221,
+          "_colorMidB": 0,
+          "_colorEndR": 255,
+          "_colorEndG": 170,
+          "_colorEndB": 0,
+          "_colorStartHex": 16724736
+        }
+      }
+    ]
+  },
+  "Fire Wall Practice": {
+    "name": "Fire Wall Practice",
+    "layers": [
+      {
+        "id": 0,
+        "name": "Smoke",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 0.51,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 1.1,
+            "x": 0.5,
+            "y": 0.5
+          },
+          "scaleIncrease": -0.38,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#5c5c5c",
+            "mid": "#7d7d7d",
+            "end": "#a1a1a1"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 2.5,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 88,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 248,
+            "max": 299,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 2
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "rect",
+          "zIndex": 4,
+          "spawnRect": {
+            "width": 400,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 6,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke3_13.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 1,
+            "radius": 35,
+            "color": "#ff600a"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.87
+          },
+          "cellShading": {
+            "enabled": true,
+            "strength": 8,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      },
+      {
+        "id": 1,
+        "name": "Red Smoke",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.48,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 1.1,
+            "x": 0.5,
+            "y": 0.5
+          },
+          "scaleIncrease": -0.38,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ff2600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 2.5,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 88,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 248,
+            "max": 299,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "rect",
+          "zIndex": 4,
+          "spawnRect": {
+            "width": 400,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 6,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke_07.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 1,
+            "radius": 35,
+            "color": "#ff600a"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.87
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 8,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Fire",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 1.5,
+            "x": 0.5,
+            "y": 0.3
+          },
+          "scaleIncrease": -0.38,
+          "scaleWiggle": 9,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ff6600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 2.5,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 88,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 248,
+            "max": 299,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.1,
+            "max": 1.4
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "rect",
+          "zIndex": 5,
+          "spawnRect": {
+            "width": 400,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 6,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/fire_31.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": true,
+            "intensity": 1,
+            "radius": 35,
+            "color": "#ff600a"
+          },
+          "unmult": true,
+          "alphaGate": {
+            "enabled": true,
+            "strength": 0.87
+          },
+          "cellShading": {
+            "enabled": true,
+            "strength": 8,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Particles",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.7,
+            "x": 0.3,
+            "y": 0.3
+          },
+          "scaleIncrease": -0.38,
+          "scaleWiggle": 9,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ffa200",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 2.5,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 88,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 248,
+            "max": 299,
+            "increase": 0,
+            "wiggle": 9
+          },
+          "lifetime": {
+            "min": 0.8,
+            "max": 2.4
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "rect",
+          "zIndex": 4,
+          "spawnRect": {
+            "width": 400,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 2,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 1,
+            "radius": 35,
+            "color": "#ff600a"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.87
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 8,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      }
+    ]
+  },
+  "Anime Fire": {
+    "name": "Anime Fire",
+    "layers": [
+      {
+        "id": 0,
+        "name": "Smoke",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.51,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 1.1,
+            "x": 0.3,
+            "y": 0.3
+          },
+          "scaleIncrease": -0.63,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#5c5c5c",
+            "mid": "#7d7d7d",
+            "end": "#a1a1a1"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 1.28,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 88,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 248,
+            "max": 299,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 2
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 4,
+          "spawnRect": {
+            "width": 400,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 6,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke3_13.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 1,
+            "radius": 35,
+            "color": "#ff600a"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.87
+          },
+          "cellShading": {
+            "enabled": true,
+            "strength": 8,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      },
+      {
+        "id": 1,
+        "name": "Red Smoke",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.48,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 1.1,
+            "x": 0.4,
+            "y": 0.4
+          },
+          "scaleIncrease": -0.38,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ff2600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 1.58,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 88,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 248,
+            "max": 299,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.5,
+            "max": 1
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 4,
+          "spawnRect": {
+            "width": 400,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 6,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/smoke_07.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 1,
+            "radius": 35,
+            "color": "#ff600a"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.87
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 8,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Fire",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 1.5,
+            "x": 0.5,
+            "y": 0.3
+          },
+          "scaleIncrease": -0.38,
+          "scaleWiggle": 9,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ff6600",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 1.29,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 88,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 248,
+            "max": 299,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.1,
+            "max": 1.4
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 5,
+          "spawnRect": {
+            "width": 400,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 6,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/fire_31.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": true,
+            "intensity": 1,
+            "radius": 10,
+            "color": "#ff600a"
+          },
+          "unmult": true,
+          "alphaGate": {
+            "enabled": true,
+            "strength": 0.87
+          },
+          "cellShading": {
+            "enabled": true,
+            "strength": 8,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Particles",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.7,
+            "x": 0.3,
+            "y": 0.3
+          },
+          "scaleIncrease": -0.38,
+          "scaleWiggle": 9,
+          "color": {
+            "start": "#ff3300",
+            "mid": "#ffa200",
+            "end": "#ffaa00"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 2.5,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 88,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 248,
+            "max": 299,
+            "increase": 0,
+            "wiggle": 9
+          },
+          "lifetime": {
+            "min": 0.8,
+            "max": 2.4
+          },
+          "frequency": 100,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "point",
+          "zIndex": 4,
+          "spawnRect": {
+            "width": 400,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 2,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 1,
+            "radius": 35,
+            "color": "#ff600a"
+          },
+          "unmult": false,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.87
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 8,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      }
+    ]
+  },
+  "Impact": {
+    "name": "Impact",
+    "layers": [
+      {
+        "id": 0,
+        "name": "Particles",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 0.6,
+            "x": 0.7,
+            "y": 0.6
+          },
+          "scaleIncrease": -0.14,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffddbd",
+            "mid": "#ffffff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 50,
+            "max": 100
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": 0,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": true
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.2,
+            "max": 0.2
+          },
+          "frequency": 20,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "burst",
+          "zIndex": 2,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 12,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/trace_05.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": true,
+          "alphaGate": {
+            "enabled": true,
+            "strength": 0.09
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 12,
+            "outline": false,
+            "outlineWidth": 0.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": ""
+        }
+      },
+      {
+        "id": 1,
+        "name": "Ring",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 0.6,
+            "y": 0.6
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#fffbfa",
+            "mid": "#fffadb",
+            "end": "#fddb96"
+          },
+          "speed": {
+            "min": 50,
+            "max": 50
+          },
+          "acceleration": {
+            "x": -38.70750329594684,
+            "y": 155.24731620415943
+          },
+          "speedIncrease": 0.37,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 0,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 287,
+            "max": 292,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.2,
+            "max": 0.3
+          },
+          "frequency": 20,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "burst",
+          "zIndex": 2,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/impact_3.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": true,
+          "alphaGate": {
+            "enabled": true,
+            "strength": 0.16
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Impact",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 0.6,
+            "y": 0.6
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#fffbfa",
+            "mid": "#fff194",
+            "end": "#fddb96"
+          },
+          "speed": {
+            "min": 50,
+            "max": 50
+          },
+          "acceleration": {
+            "x": -38.70750329594684,
+            "y": 155.24731620415943
+          },
+          "speedIncrease": 0.37,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 0,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 287,
+            "max": 292,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.2,
+            "max": 0.3
+          },
+          "frequency": 20,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "burst",
+          "zIndex": 5,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/flare_28.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": true,
+          "alphaGate": {
+            "enabled": true,
+            "strength": 0.19
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "fire"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Slow Particles",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 1,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "NORMAL",
+          "scale": {
+            "start": 0.1,
+            "end": 0.6,
+            "x": 0.7,
+            "y": 0.6
+          },
+          "scaleIncrease": -0.14,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#ffddbd",
+            "mid": "#ffffff",
+            "end": "#ffffff"
+          },
+          "speed": {
+            "min": 220,
+            "max": 500
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": -0.9,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 0,
+            "startMax": 360,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 50,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 0.3,
+            "max": 0.8
+          },
+          "frequency": 20,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": false,
+          "spawnSeed": 0,
+          "spawnType": "burst",
+          "zIndex": 2,
+          "spawnRect": {
+            "width": 10,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 12,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "",
+          "trail": {
+            "enabled": true,
+            "length": 12,
+            "spacing": 1,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": true,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": ""
+        }
+      }
+    ]
+  },
+  "Sun Rays": {
+    "name": "Sun Rays",
+    "layers": [
+      {
+        "id": 0,
+        "name": "Layer 1",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 0.71,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 5,
+            "y": 5
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#fefccd",
+            "mid": "#ffffa3",
+            "end": "#fbd49d"
+          },
+          "speed": {
+            "min": 0,
+            "max": 0
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": -1,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 320,
+            "startMax": 320,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 5,
+            "max": 4.8
+          },
+          "frequency": 5,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": true,
+          "spawnSeed": 0,
+          "spawnType": "rect",
+          "zIndex": 8,
+          "spawnRect": {
+            "width": 1270,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/lines_5.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#fffca8"
+          },
+          "unmult": true,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "holy"
+        }
+      }
+    ]
+  },
+  "Sun": {
+    "name": "Sun",
+    "layers": [
+      {
+        "id": 1,
+        "name": "Layer 2",
+        "visible": true,
+        "config": {
+          "alpha": {
+            "start": 0,
+            "mid": 1,
+            "end": 0
+          },
+          "blendMode": "SCREEN",
+          "scale": {
+            "start": 0.1,
+            "end": 0.8,
+            "x": 5,
+            "y": 5
+          },
+          "scaleIncrease": 0,
+          "scaleWiggle": 0,
+          "color": {
+            "start": "#f8fec8",
+            "mid": "#ffffcc",
+            "end": "#ffdb9e"
+          },
+          "speed": {
+            "min": 0,
+            "max": 0
+          },
+          "acceleration": {
+            "x": 0,
+            "y": 0
+          },
+          "speedIncrease": -1,
+          "speedWiggle": 0,
+          "rotation": {
+            "startMin": 320,
+            "startMax": 320,
+            "speedMin": 0,
+            "speedMax": 0,
+            "increase": 0,
+            "wiggle": 0,
+            "fixToCenter": false
+          },
+          "direction": {
+            "min": 0,
+            "max": 360,
+            "increase": 0,
+            "wiggle": 0
+          },
+          "lifetime": {
+            "min": 4.8,
+            "max": 5
+          },
+          "frequency": 5,
+          "emitterLifetime": -1,
+          "maxParticles": 1000,
+          "preSpawn": true,
+          "spawnSeed": 0,
+          "spawnType": "rect",
+          "zIndex": 8,
+          "spawnRect": {
+            "width": 1270,
+            "height": 10
+          },
+          "spawnCircle": {
+            "radius": 20
+          },
+          "spawnRing": {
+            "radius": 50,
+            "innerRadius": 30
+          },
+          "particlesPerWave": 1,
+          "spawnPos": {
+            "x": 0,
+            "y": 0
+          },
+          "texture": "presets/lines_5.png",
+          "trail": {
+            "enabled": false,
+            "length": 5,
+            "spacing": 2,
+            "fadeMode": "linear",
+            "widthScale": 0.8
+          },
+          "glow": {
+            "enabled": false,
+            "intensity": 2,
+            "radius": 15,
+            "color": "#ffffff"
+          },
+          "unmult": true,
+          "alphaGate": {
+            "enabled": false,
+            "strength": 0.5
+          },
+          "cellShading": {
+            "enabled": false,
+            "strength": 4,
+            "outline": false,
+            "outlineWidth": 1.5,
+            "outlineColor": "#000000"
+          },
+          "pixelate": {
+            "enabled": false,
+            "strength": 4
+          },
+          "_presetName": "",
+          "_colorPresetName": "holy"
+        }
+      }
+    ]
+  }
+}
