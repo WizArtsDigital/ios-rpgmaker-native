@@ -10,6 +10,9 @@ import GoogleMobileAds
 
 @main
 struct RPGMakerFrameworkApp: App {
+    /// Only exists to enforce per-game orientation locks (OrientationLock).
+    @UIApplicationDelegateAdaptor(OrientationAppDelegate.self) private var orientationDelegate
+
     /// Scans the bundled `Games` folder once at launch and is shared with every view.
     @State private var library = GameLibrary()
 

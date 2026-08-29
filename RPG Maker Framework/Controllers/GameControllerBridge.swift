@@ -27,6 +27,19 @@
 //  This matches RPG Maker MZ's own default `Input.gamepadMapper`, so games
 //  behave the same as they do with a controller in a desktop browser.
 //
+//  KEYBOARD MODE: games whose plugins remap input around their own key
+//  bindings (e.g. Hendrix_Keyboard_Gamepad) ignore MZ's logical buttons, so
+//  for them framework.json declares a "controller" map and the bridge types
+//  real keyboard keys instead — the one input path every plugin honors:
+//
+//    "controller": { "buttons": {
+//      "a": "E", "b": "Escape", "x": "U", "y": "G",
+//      "lb": "F", "rb": "Q", "lt": "Space", "rt": "C", "menu": "Escape",
+//      "up": "W", "down": "S", "left": "A", "right": "D" } }
+//
+//  Direction entries (up/down/left/right, fed by D-pad and left stick)
+//  default to the arrow keys when omitted.
+//
 
 import Foundation
 import GameController
@@ -40,6 +53,9 @@ nonisolated enum RPGButton: String {
 
 final class GameControllerBridge {
     private weak var webView: WKWebView?
+
+    /// Non-nil = keyboard mode: controller element id → key name to type.
+    private let keyboardMap: [String: String]?
     private var observers: [NSObjectProtocol] = []
     private var attachedControllers: [ObjectIdentifier: GCController] = [:]
 
@@ -51,8 +67,12 @@ final class GameControllerBridge {
 
     private let stickThreshold: Float = 0.5
 
-    init(webView: WKWebView) {
+    init(webView: WKWebView, keyboardMap: [String: String]? = nil) {
         self.webView = webView
+        self.keyboardMap = keyboardMap
+        #if DEBUG
+        ControllerDebugState.shared.reset()
+        #endif
 
         for controller in GCController.controllers() {
             attach(controller)
@@ -80,7 +100,7 @@ final class GameControllerBridge {
     func resync() {
         sendConnected(!attachedControllers.isEmpty)
         for direction in heldDirections {
-            send(direction, pressed: true)
+            sendDirection(direction, pressed: true)
         }
     }
 
@@ -110,13 +130,26 @@ final class GameControllerBridge {
             controller.playerIndex = .index1
         }
 
-        bind(pad.buttonA, to: .ok)
-        bind(pad.buttonB, to: .cancel)
-        bind(pad.buttonX, to: .shift)
-        bind(pad.buttonY, to: .menu)
-        bind(pad.leftShoulder, to: .pageup)
-        bind(pad.rightShoulder, to: .pagedown)
-        bind(pad.buttonMenu, to: .escape)
+        if let map = keyboardMap {
+            bindKey(pad.buttonA, to: map["a"])
+            bindKey(pad.buttonB, to: map["b"])
+            bindKey(pad.buttonX, to: map["x"])
+            bindKey(pad.buttonY, to: map["y"])
+            bindKey(pad.leftShoulder, to: map["lb"])
+            bindKey(pad.rightShoulder, to: map["rb"])
+            bindKey(pad.leftTrigger, to: map["lt"])
+            bindKey(pad.rightTrigger, to: map["rt"])
+            bindKey(pad.buttonMenu, to: map["menu"])
+            bindKey(pad.buttonOptions, to: map["options"])
+        } else {
+            bind(pad.buttonA, to: .ok)
+            bind(pad.buttonB, to: .cancel)
+            bind(pad.buttonX, to: .shift)
+            bind(pad.buttonY, to: .menu)
+            bind(pad.leftShoulder, to: .pageup)
+            bind(pad.rightShoulder, to: .pagedown)
+            bind(pad.buttonMenu, to: .escape)
+        }
 
         // GameController delivers handlers on the main queue by default;
         // assumeIsolated makes that explicit to the compiler.
@@ -133,12 +166,20 @@ final class GameControllerBridge {
             }
         }
 
+        #if DEBUG
+        print("[Controller] Attached: \(controller.vendorName ?? "unknown") (keyboard mode: \(keyboardMap != nil))")
+        ControllerDebugState.shared.attachedName = controller.vendorName ?? "controller"
+        #endif
         sendConnected(true)
     }
 
     private func detach(_ controller: GCController) {
         let key = ObjectIdentifier(controller)
         guard attachedControllers.removeValue(forKey: key) != nil else { return }
+        #if DEBUG
+        print("[Controller] Detached: \(controller.vendorName ?? "unknown")")
+        if attachedControllers.isEmpty { ControllerDebugState.shared.attachedName = nil }
+        #endif
         clearHandlers(on: controller)
 
         if attachedControllers.isEmpty {
@@ -146,6 +187,15 @@ final class GameControllerBridge {
             stickVector = (0, 0)
             updateDirections()
             sendConnected(false)
+        }
+    }
+
+    private func bindKey(_ button: GCControllerButtonInput?, to keyName: String?) {
+        guard let button, let keyName, !keyName.isEmpty else { return }
+        button.pressedChangedHandler = { [weak self] _, _, pressed in
+            MainActor.assumeIsolated {
+                self?.sendKey(keyName, pressed: pressed)
+            }
         }
     }
 
@@ -159,9 +209,13 @@ final class GameControllerBridge {
 
     private func clearHandlers(on controller: GCController) {
         guard let pad = controller.extendedGamepad else { return }
-        for button in [pad.buttonA, pad.buttonB, pad.buttonX, pad.buttonY,
-                       pad.leftShoulder, pad.rightShoulder, pad.buttonMenu] {
-            button.pressedChangedHandler = nil
+        let buttons: [GCControllerButtonInput?] = [
+            pad.buttonA, pad.buttonB, pad.buttonX, pad.buttonY,
+            pad.leftShoulder, pad.rightShoulder, pad.leftTrigger, pad.rightTrigger,
+            pad.buttonMenu, pad.buttonOptions
+        ]
+        for button in buttons {
+            button?.pressedChangedHandler = nil
         }
         pad.dpad.valueChangedHandler = nil
         pad.leftThumbstick.valueChangedHandler = nil
@@ -179,17 +233,43 @@ final class GameControllerBridge {
         }
 
         for released in heldDirections.subtracting(next) {
-            send(released, pressed: false)
+            sendDirection(released, pressed: false)
         }
         for pressed in next.subtracting(heldDirections) {
-            send(pressed, pressed: true)
+            sendDirection(pressed, pressed: true)
         }
         heldDirections = next
     }
 
+    private func sendDirection(_ direction: RPGButton, pressed: Bool) {
+        if let map = keyboardMap {
+            let defaults: [RPGButton: String] = [
+                .up: "ArrowUp", .down: "ArrowDown", .left: "ArrowLeft", .right: "ArrowRight"
+            ]
+            let keyName = map[direction.rawValue] ?? defaults[direction] ?? direction.rawValue
+            sendKey(keyName, pressed: pressed)
+        } else {
+            send(direction, pressed: pressed)
+        }
+    }
+
     // MARK: - JavaScript
 
+    /// Keyboard mode: type/release a real key inside the game.
+    private func sendKey(_ keyName: String, pressed: Bool) {
+        #if DEBUG
+        ControllerDebugState.shared.eventCount += 1
+        ControllerDebugState.shared.lastEvent = "key \(keyName) \(pressed ? "down" : "up")"
+        #endif
+        let function = pressed ? "pressKey" : "releaseKey"
+        evaluate("window.RPGMakerFrameworkGamepad && RPGMakerFrameworkGamepad.\(function)('\(keyName)');")
+    }
+
     private func send(_ button: RPGButton, pressed: Bool) {
+        #if DEBUG
+        ControllerDebugState.shared.eventCount += 1
+        ControllerDebugState.shared.lastEvent = "\(button.rawValue) \(pressed ? "down" : "up")"
+        #endif
         evaluate("window.RPGMakerFrameworkGamepad && RPGMakerFrameworkGamepad.set('\(button.rawValue)', \(pressed));")
     }
 
@@ -202,6 +282,7 @@ final class GameControllerBridge {
             #if DEBUG
             if let error {
                 print("[Controller] JS bridge error: \(error.localizedDescription)")
+                ControllerDebugState.shared.lastEvent = "JS ERROR: \(error.localizedDescription)"
             }
             #endif
         }

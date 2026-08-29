@@ -50,3 +50,22 @@ final class GameControllerMonitor {
         )
     }
 }
+
+#if DEBUG
+/// Debug instrumentation: what the game-session bridge is actually doing,
+/// shown as an overlay in GamePlayerView so diagnosing needs no Xcode console.
+@Observable
+final class ControllerDebugState {
+    static let shared = ControllerDebugState()
+    var attachedName: String?
+    var eventCount = 0
+    var lastEvent: String?
+    private init() {}
+
+    func reset() {
+        attachedName = nil
+        eventCount = 0
+        lastEvent = nil
+    }
+}
+#endif

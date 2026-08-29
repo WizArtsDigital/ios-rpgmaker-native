@@ -1,6 +1,23 @@
 {
-  "_comment": "RPG Maker Framework per-game settings. Two-finger tap = Attack (keyboard U, as bound in Hendrix_Keyboard_Gamepad). Single tap moves (Action Engine 'Move via Cursor' is on).",
+  "_comment": "RPG Maker Framework per-game settings. Tap to move ('Move via Cursor' on), two-finger tap attacks. Controller uses keyboard mode: the Hendrix plugins ignore MZ's logical gamepad buttons, so the bridge types this game's own keys (mirrors its Keyboard/Gamepad Button Config).",
   "gestures": {
     "twoFingerTap": { "key": "U" }
+  },
+  "controller": {
+    "buttons": {
+      "a": "E",
+      "b": "Escape",
+      "x": "U",
+      "y": "G",
+      "lb": "F",
+      "rb": "Q",
+      "lt": "Space",
+      "rt": "C",
+      "menu": "Escape",
+      "up": "W",
+      "down": "S",
+      "left": "A",
+      "right": "D"
+    }
   }
 }

@@ -20,6 +20,7 @@
 		B100000000000000000000AC /* GameControllerBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000FC /* GameControllerBridge.swift */; };
 		B100000000000000000000AD /* GamepadBridgeScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000FD /* GamepadBridgeScript.swift */; };
 		B100000000000000000000AE /* RPGMakerCompatScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000FE /* RPGMakerCompatScript.swift */; };
+		B100000000000000000000AF /* OrientationLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000FF /* OrientationLock.swift */; };
 		B100000000000000000000A7 /* Games in Resources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000F7 /* Games */; };
 		A36ED01B25CDD5B8000E5717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A36ED01A25CDD5B8000E5717 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,7 @@
 		B100000000000000000000FC /* GameControllerBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerBridge.swift; sourceTree = "<group>"; };
 		B100000000000000000000FD /* GamepadBridgeScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamepadBridgeScript.swift; sourceTree = "<group>"; };
 		B100000000000000000000FE /* RPGMakerCompatScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGMakerCompatScript.swift; sourceTree = "<group>"; };
+		B100000000000000000000FF /* OrientationLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationLock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				B100000000000000000000FE /* RPGMakerCompatScript.swift */,
+				B100000000000000000000FF /* OrientationLock.swift */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				B100000000000000000000AC /* GameControllerBridge.swift in Sources */,
 				B100000000000000000000AD /* GamepadBridgeScript.swift in Sources */,
 				B100000000000000000000AE /* RPGMakerCompatScript.swift in Sources */,
+				B100000000000000000000AF /* OrientationLock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -85,11 +85,21 @@ Per-Game Settings: framework.json (optional)
 Drop a framework.json next to a game's index.html to configure the framework's runtime layer for that game only. Currently supported:
 
   {
+    "display": "extend",
     "gestures": {
       "twoFingerTap":   { "key": "U" },
       "threeFingerTap": { "key": "Escape" }
     }
   }
+
+orientation - "landscape", "portrait", or "any". Games are orientation-locked while playing: the phone rotates to the game's orientation when it launches and unlocks when you exit to the library. Without this key the framework decides from the game's authored resolution (wider than tall → landscape). The canvas is always sized for the locked orientation, so launching from a portrait-held phone still comes up edge-to-edge landscape.
+
+display - how the game fills the screen (black borders come from RPG Maker letterboxing its authored System.json resolution):
+  "extend" (the default, even with no framework.json): at boot the canvas grows to the device's aspect ratio, so the game world reaches every edge. Menus and windows keep their authored size and stay centered (MZ's own UI-area behavior). You simply see more of the map. Note: on maps smaller than the widened view, RPG Maker shows the area beyond the map edge, same as it would on an ultrawide monitor.
+  "fill": keep the authored resolution and scale it up to cover the screen, cropping the overflow. Use for games whose HUD assumes exact canvas edges.
+  "fit": RPG Maker's stock letterboxing, if a game needs the black borders back.
+
+controller - optional keyboard mode for the game controller bridge. By default a controller drives RPG Maker's standard logical buttons (A=ok, B=cancel, ...), which vanilla MZ games understand. Games using input-remapping plugins (Hendrix_Keyboard_Gamepad and friends) ignore those, so give them a "controller" map and the bridge types the game's own keyboard keys instead: {"controller": {"buttons": {"a": "E", "x": "U", "lt": "Space", "up": "W", ...}}}. Element names: a, b, x, y, lb, rb, lt, rt, menu, options, plus up/down/left/right for the D-pad and left stick (default: arrow keys). The bundled Hendrix sample ships with the full map matching its Button Config.
 
 Multi-finger taps are delivered to the game as real keyboard presses (document keydown/keyup), so MZ's Input.keyMapper and key-remapping plugins such as Hendrix_Keyboard_Gamepad treat them exactly like a keyboard. Key names: a single letter or digit, Space, Enter, Escape, Shift, Control, Tab, Up/Down/Left/Right. While a two-finger gesture is bound, MZ's default two-finger "cancel" is suppressed. Single taps are untouched - normal RPG Maker tap-to-move keeps working.
 

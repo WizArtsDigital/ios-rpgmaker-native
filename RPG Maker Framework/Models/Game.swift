@@ -29,4 +29,7 @@ nonisolated struct Game: Identifiable {
     /// settings for the framework's runtime layer (touch gestures, etc.),
     /// handed to the game as `window.RPGMakerFrameworkConfig`. See README.
     let frameworkConfigJSON: String?
+
+    /// The orientation this game plays in (locked while the game is open).
+    let orientation: GameOrientation
 }

@@ -39,8 +39,19 @@ struct GameWebView: UIViewRepresentable {
         //   2. Controller bridge (window.RPGMakerFrameworkGamepad).
         //   3. DEBUG only: mirror JS errors into Xcode's console.
         let contentController = configuration.userContentController
-        // 0. Per-game settings from framework.json (already validated as JSON).
-        let configJSON = game.frameworkConfigJSON ?? "{}"
+        // 0. Per-game settings from framework.json (already validated as JSON),
+        // plus the natively resolved orientation, so the JS display layer sizes
+        // the canvas for the locked orientation even if the rotation animation
+        // hasn't finished when the game boots.
+        var configObject: [String: Any] = [:]
+        if let raw = game.frameworkConfigJSON,
+           let data = raw.data(using: .utf8),
+           let parsed = try? JSONSerialization.jsonObject(with: data) as? [String: Any] {
+            configObject = parsed
+        }
+        configObject["_orientation"] = game.orientation.rawValue
+        let configData = (try? JSONSerialization.data(withJSONObject: configObject)) ?? Data("{}".utf8)
+        let configJSON = String(data: configData, encoding: .utf8) ?? "{}"
         contentController.addUserScript(
             WKUserScript(
                 source: "window.RPGMakerFrameworkConfig = \(configJSON);",
@@ -74,7 +85,14 @@ struct GameWebView: UIViewRepresentable {
         webView.loadFileURL(game.indexURL, allowingReadAccessTo: game.folderURL)
 
         // Forward PS5 / Xbox / Backbone / MFi controller input into the game.
-        context.coordinator.controllerBridge = GameControllerBridge(webView: webView)
+        // With a framework.json "controller" map, the bridge types the game's
+        // own keyboard keys; otherwise it drives MZ's logical buttons.
+        var keyboardMap: [String: String]?
+        if let controller = configObject["controller"] as? [String: Any],
+           let buttons = controller["buttons"] as? [String: String] {
+            keyboardMap = Dictionary(uniqueKeysWithValues: buttons.map { ($0.key.lowercased(), $0.value) })
+        }
+        context.coordinator.controllerBridge = GameControllerBridge(webView: webView, keyboardMap: keyboardMap)
 
         // Keep the screen awake while a game is running.
         UIApplication.shared.isIdleTimerDisabled = true

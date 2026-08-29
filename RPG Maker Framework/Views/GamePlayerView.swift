@@ -28,7 +28,16 @@ struct GamePlayerView: View {
             exitButton
                 .padding(12)
         }
+        #if DEBUG
+        .overlay(alignment: .bottomLeading) {
+            ControllerDebugOverlay()
+                .padding(.leading, 10)
+                .padding(.bottom, 10)
+        }
+        #endif
         .statusBarHidden(true)
+        .onAppear { OrientationLock.lock(game.orientation.mask) }
+        .onDisappear { OrientationLock.unlock() }
         .persistentSystemOverlays(.hidden)
         .confirmationDialog(
             "Exit to the game library?",
@@ -68,3 +77,31 @@ struct GamePlayerView: View {
         .accessibilityLabel("Exit game")
     }
 }
+
+#if DEBUG
+/// Debug builds only: live view of the controller bridge, so a device test
+/// diagnoses itself without the Xcode console.
+private struct ControllerDebugOverlay: View {
+    private let debug = ControllerDebugState.shared
+
+    var body: some View {
+        Text(statusText)
+            .font(.caption2.monospaced())
+            .foregroundStyle(.white)
+            .padding(.horizontal, 8)
+            .padding(.vertical, 4)
+            .background(.black.opacity(0.65), in: Capsule())
+    }
+
+    private var statusText: String {
+        guard let name = debug.attachedName else {
+            return "controller: none detected"
+        }
+        var text = "\(name) · \(debug.eventCount) events"
+        if let last = debug.lastEvent {
+            text += " · \(last)"
+        }
+        return text
+    }
+}
+#endif

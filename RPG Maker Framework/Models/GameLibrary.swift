@@ -48,6 +48,7 @@ final class GameLibrary {
         guard fileManager.fileExists(atPath: index.path) else { return nil }
 
         let icon = folder.appendingPathComponent("icon/icon.png")
+        let configJSON = readFrameworkConfig(in: folder)
 
         return Game(
             id: folder.lastPathComponent,
@@ -55,8 +56,32 @@ final class GameLibrary {
             folderURL: folder,
             indexURL: index,
             iconURL: fileManager.fileExists(atPath: icon.path) ? icon : nil,
-            frameworkConfigJSON: readFrameworkConfig(in: folder)
+            frameworkConfigJSON: configJSON,
+            orientation: resolveOrientation(configJSON: configJSON, folder: folder)
         )
+    }
+
+    /// framework.json's "orientation" wins; otherwise the game's authored
+    /// resolution decides (wider than tall → landscape, like both stock
+    /// RPG Maker aspect presets).
+    private static func resolveOrientation(configJSON: String?, folder: URL) -> GameOrientation {
+        if let configJSON,
+           let data = configJSON.data(using: .utf8),
+           let object = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+           let raw = object["orientation"] as? String,
+           let explicit = GameOrientation(rawValue: raw.lowercased()) {
+            return explicit
+        }
+        let system = folder.appendingPathComponent("data/System.json")
+        if let data = try? Data(contentsOf: system),
+           let object = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+           let advanced = object["advanced"] as? [String: Any],
+           let width = advanced["screenWidth"] as? Double,
+           let height = advanced["screenHeight"] as? Double,
+           height > width {
+            return .portrait
+        }
+        return .landscape
     }
 
     /// Optional `framework.json` next to index.html. Validated as JSON so a typo
